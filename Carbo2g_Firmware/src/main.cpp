@@ -11,7 +11,7 @@
 
 // ------------------------ DEFINES ------------------------ //
 #define timeoutUntillResetSeconds  60
-#define timeToUpdateGsheetsSeconds 10
+#define timeToUpdateGsheetsSeconds 60
 
 // ------------------ Gsheets Credentials ------------------ //
 // Gscript ID (googleScriptID) is in secrets.h
@@ -52,7 +52,7 @@ void setup()
   Serial.println();
   setupDisplay();
   setupMHZ19();
-  setupWiFi(false);
+  setupWiFi(true);
 
 }
 
