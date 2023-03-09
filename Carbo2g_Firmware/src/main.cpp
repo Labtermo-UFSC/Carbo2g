@@ -162,7 +162,11 @@ void setupWiFi(bool IsWAP2Enterprise){
   display.clearDisplay();
   display.println("Conectado!");
   display.display();
-  vTaskDelay(10000 / portTICK_PERIOD_MS);
+  vTaskDelay(3000 / portTICK_PERIOD_MS);
+  display.clearDisplay();
+  display.println("Aquecendo..!");
+  display.display();
+  vTaskDelay(7000 / portTICK_PERIOD_MS);
 }
 
 void setupDisplay(){
