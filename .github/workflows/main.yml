@@ -19,6 +19,9 @@ jobs:
           python-version: '3.9'
       - name: Install PlatformIO Core
         run: pip install --upgrade platformio
+        
+      - name: Open PlatformIO Folder
+        run: cd Carbo2g_Firmware
 
       - name: Build PlatformIO Project
         run: pio run
