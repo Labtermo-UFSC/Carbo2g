@@ -3,7 +3,7 @@
 #include <esp_wpa2.h>
 #include <esp_wifi.h>
 #include <HTTPClient.h>
-#include "secrets.h"
+#include "secrets_test.h"
 #include "config.h"
 #include "MHZ19.h"
 #include <Adafruit_GFX.h>
