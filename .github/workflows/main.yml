@@ -21,7 +21,7 @@ jobs:
         run: pip install --upgrade platformio
         
       - name: CD do PlatformIO Project Folder
-        run: cd Carbo2g_Firmware/
+        run: cd Carbo2g/Carbo2g_Firmware
         
       - name: ls for debug
         run: ls
