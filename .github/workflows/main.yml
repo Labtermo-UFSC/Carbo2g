@@ -5,6 +5,9 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Carbo2g_Firmware
 
     steps:
       - uses: actions/checkout@v3
@@ -19,15 +22,6 @@ jobs:
           python-version: '3.9'
       - name: Install PlatformIO Core
         run: pip install --upgrade platformio
-        
-      - name: ls for debug 1
-        run: ls
-        
-      - name: CD do PlatformIO Project Folder
-        run: cd Carbo2g_Firmware
-        
-      - name: ls for debug 2 
-        run: ls
 
       - name: Build PlatformIO Project
         run: pio run
