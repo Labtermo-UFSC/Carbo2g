@@ -20,8 +20,11 @@ jobs:
       - name: Install PlatformIO Core
         run: pip install --upgrade platformio
         
-      - name: Test
+      - name: CD do PlatformIO Project Folder
         run: cd Carbo2g_Firmware/
+        
+      - name: ls for debug
+        run: ls
 
       - name: Build PlatformIO Project
         run: pio run
