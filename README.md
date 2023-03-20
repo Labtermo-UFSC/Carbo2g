@@ -1,6 +1,8 @@
 # Carbo 2
 ## Monitorando PPMs desde 2020
 
+[![PlatformIO CI](https://github.com/Labtermo-UFSC/Carbo2g/actions/workflows/main.yml/badge.svg)](https://github.com/Labtermo-UFSC/Carbo2g/actions/workflows/main.yml)
+
 Carbo 2 é um sistema de monitoramento de CO2, o sensor fica localizado em um ambiente a atualiza a nuvem com valores
 frequentes da concentração de CO2.
 
